@@ -16,17 +16,17 @@ let x;
 // // return x;
 // }
 // console.log(getComputerChoice(5));
-let y;
-function getHumanChoice(y){
-    if(y==1){
+
+function getHumanChoice(x){
+    if(x==1){
         console.log("Rock")
     }
-     else if(y==2){
+     else if(x==2){
         console.log("Paper")
     }
      else{
         console.log("Scissors")
     }
 }
-let Human_Choice = prompt("Enter your Number-1/2/3");
+let Human_Choice = prompt("Enter your Number");
 getHumanChoice(Human_Choice);
