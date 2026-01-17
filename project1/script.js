@@ -59,8 +59,9 @@ function Indentifay_Winner(UsetChoices,ComputerChoices){
 function PlayRound(){
     let Userchus= getUserChoices();
     let ComputerChus = getComputerGeneretion();
+     console.log(Indentifay_Winner(Userchus,ComputerChus));
     console.log("Your choise is:- "+ Userchus);
     console.log("Computer choise is:- "+ ComputerChus);
-    console.log(Indentifay_Winner(Userchus,ComputerChus));
+   
 }
 PlayRound();
