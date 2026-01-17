@@ -42,8 +42,25 @@ function Indentifay_Winner(UsetChoices,ComputerChoices){
         }
 
     }
-    if(UsetChoices=== "scssi"){
+    if(UsetChoices=== "scissor"){
+        if(ComputerChoices==="paper"){
+            return "You win!!!";
+
+        }
+        else{
+            return "you lose....";
+        }
 
     }
 
 }
+
+
+function PlayRound(){
+    let Userchus= getUserChoices();
+    let ComputerChus = getComputerGeneretion();
+    console.log("Your choise is:- "+ Userchus);
+    console.log("Computer choise is:- "+ ComputerChus);
+    console.log(Indentifay_Winner(Userchus,ComputerChus));
+}
+PlayRound();
