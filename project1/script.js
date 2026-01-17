@@ -1,4 +1,4 @@
-alert("Done")
+
 console.log("Hello Sk")
 function getComputerGeneretion(){
     const random_string=["rock","paper","scissor"];
@@ -11,12 +11,13 @@ return random_string[randomchoices];
 
 function getUserChoices(){
     let userInput=prompt("enter your choices (String rock/paper/scissor)");
-    while(!["rock","paper","scissor"].includes(userInput)){
+    let LowerCaseInput= userInput.toLowerCase();
+    while(!["rock","paper","scissor"].includes(LowerCaseInput)){
         alert("Invalid input ,Please enter String rock/paper/scissor")
-        userInput=prompt("Enter your choices (String rock/paper/scissor)");
+        LowerCaseInput=prompt("Enter your choices (String rock/paper/scissor)");
     }
     // console.log(userInput);
-    return userInput;
+    return LowerCaseInput;
 }
 // getUserChoices();
 function Indentifay_Winner(UsetChoices,ComputerChoices){
@@ -65,3 +66,5 @@ function PlayRound(){
    
 }
 PlayRound();
+// let ver1="Rock";
+// console.log(ver1.toLowerCase());
