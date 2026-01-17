@@ -1,32 +1,10 @@
 alert("Done")
 console.log("Hello Sk")
-let x;
-// function getComputerChoice(ran){
-// x= Math.floor( Math.random()*ran);
-
-// if(x<=2){
-//     return "rock";
-// }
-// else if(x<=3){
-//     return "paper";
-// }
-// else{
-//     return "scissors";
-// }
-// // return x;
-// }
-// console.log(getComputerChoice(5));
-
-function getHumanChoice(x){
-    if(x==1){
-        console.log("Rock")
-    }
-     else if(x==2){
-        console.log("Paper")
-    }
-     else{
-        console.log("Scissors")
-    }
+function getComputerGeneretion(){
+    const random_string=["rock","paper","scissor"];
+const randomchoices=Math.floor(Math.random()*3);
+// return random_string[randomchoices];
+console.log(random_string[randomchoices]);
 }
-let Human_Choice = prompt("Enter your Number");
-getHumanChoice(Human_Choice);
+
+getComputerGeneretion();
