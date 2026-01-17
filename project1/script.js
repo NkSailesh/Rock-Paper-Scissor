@@ -15,7 +15,35 @@ function getUserChoices(){
         alert("Invalid input ,Please enter String rock/paper/scissor")
         userInput=prompt("Enter your choices (String rock/paper/scissor)");
     }
-    console.log(userInput);
-    // return userInput;
+    // console.log(userInput);
+    return userInput;
 }
-getUserChoices();
+// getUserChoices();
+function Indentifay_Winner(UsetChoices,ComputerChoices){
+    if(UsetChoices===ComputerChoices){
+        return "It's tai";
+    }
+    if(UsetChoices==="rock"){
+        if(ComputerChoices=== "scissor"){
+            return "You win!!!";
+
+        }
+        else{
+            return "You lose....";
+        }
+    }
+    if(UsetChoices=== "paper"){
+        if(ComputerChoices=== "rock"){
+            return "You win!!!";
+
+        }
+        else{
+            return "You lose....";
+        }
+
+    }
+    if(UsetChoices=== "scssi"){
+
+    }
+
+}
