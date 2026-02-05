@@ -84,8 +84,34 @@
 // console.log(dis);
 const contanor=document.querySelector(".display");
 const div=  document.createElement("div");
-       div.innerText="Hi this text feom js";
+       div.innerText="Hi this text from js";
        div.style.backgroundColor="blue";
        div.style.color="white";
-     
+//      div.innerHTML=  "<span>Hello World!</span>";
        contanor.appendChild(div);
+
+       const btn=document.querySelector("#btnn");
+       function conlog(){
+        console.log("Btn works properly");  
+        // alert("Btn works properly with print in console");    
+       }
+       btn.onclick=conlog;
+// btn.addEventListener("click", function (e) {
+//   e.target.style.background = "red";
+// });
+btn.addEventListener("click", function (e) {
+  e.target.style.background = "black";
+});
+const loop1= document.querySelector("#loop");
+        loop1.forEach((loop) => {
+                loop.addEventListener("click",()=>{alert("loop1")
+
+                });
+                
+        });
+//         loop1.forEach((loop) => {
+//   // and for each one we add a 'click' listener
+//   loop.addEventListener("click", () => {
+//     alert(loop.id);
+//   });
+// });
