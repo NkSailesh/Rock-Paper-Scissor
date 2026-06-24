@@ -102,16 +102,16 @@ const div=  document.createElement("div");
 btn.addEventListener("click", function (e) {
   e.target.style.background = "black";
 });
-const loop1= document.querySelector("#loop");
-        loop1.forEach((loop) => {
-                loop.addEventListener("click",()=>{alert("loop1")
-
-                });
-                
-        });
+// const loop1= document.querySelector("#loop");
 //         loop1.forEach((loop) => {
-//   // and for each one we add a 'click' listener
-//   loop.addEventListener("click", () => {
-//     alert(loop.id);
-//   });
-// });
+//                 loop.addEventListener("click",()=>{alert("loop1")
+// Accessing ceries at a time by array
+//                 });
+                
+//         });
+
+
+// let fuc=function(arg1,arg2) { return arg1+arg2;}
+// console.log(fuc(1,3));
+// let fun= (a,b) => a+b;
+// alert(fun(1,9));
